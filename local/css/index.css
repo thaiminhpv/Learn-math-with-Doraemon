@@ -1,0 +1,15 @@
+/* Scss Document */
+body {
+  min-width: 375px; }
+  body .container .panel {
+    background: #FFFFFF; }
+    body .container .panel > * {
+      margin: 30px auto; }
+    body .container .panel .score {
+      text-align: center; }
+    body .container .panel .equation {
+      margin: 40px auto;
+      font-size: 1.7em; }
+      body .container .panel .equation #answer {
+        min-width: 20px;
+        max-width: 90px; }

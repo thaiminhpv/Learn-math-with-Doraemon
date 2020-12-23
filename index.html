@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Học Toán Cùng Doraemon</title>
+    <!-- Vendor -->
+    <link href="vendor/css/bootstrap-4.3.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/css/icon.css">
+    <link rel="stylesheet" href="vendor/css/material-components-web.min.css">
+
+    <!-- local file -->
+    <link rel="stylesheet" href="local/css/index.css">
+</head>
+<body>
+<!-- body code goes here -->
+<div class="container mt-3">
+    <div class="row justify-content-center">
+        <div class="col-9 mdc-card panel">
+            <div class="score justify-content-center">
+                <h1 id="score">0</h1>
+            </div>
+            <div class="equation justify-content-center row">
+                <div class="justify-content-center"><span id="question">1 + 2 = </span>
+                    <input id="answer" type="number" value="">
+                </div>
+            </div>
+            <div class="justify-content-center mdc-card__actions">
+                <div class="mdc-card__action-buttons">
+                    <button class="mdc-button mdc-button--raised" id="checkAnswer" onclick="checkAnswer()"><span
+                            class="mdc-button__ripple"></span> Check answer
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+        <div class="mdc-card">
+            <div class="mdc-card__actions">
+                <div class="mdc-card__action-buttons">
+                    <button class="mdc-button mdc-button--raised" onclick="multiplyMode()"><span
+                            class="mdc-button__ripple"></span> x
+                    </button>
+                    <button class="mdc-button mdc-button--raised mr-3 ml-3" onclick="divisionMode()"><span
+                            class="mdc-button__ripple"></span> ÷
+                    </button>
+                    <button class="mdc-button mdc-button--raised" onclick="squareRootMode()"><span
+                            class="mdc-button__ripple"></span> √
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+    
+<div class="mdc-snackbar">
+    <div class="mdc-snackbar__surface">
+        <div class="mdc-snackbar__label"
+             role="status"
+             aria-live="polite">
+            Invalid answer, please try again!
+        </div>
+        <div class="mdc-snackbar__actions">
+            <button type="button" class="mdc-button mdc-snackbar__action">Dismiss</button>
+        </div>
+    </div>
+</div>
+<!--vendor-->
+<script src="vendor/js/jquery-3.3.1.min.js"></script>
+<script src="vendor/js/popper.min.js"></script>
+<script src="vendor/js/bootstrap-4.3.1.js"></script>
+<script src="vendor/js/material-web-components.js"></script>
+
+<!-- local -->
+<script src="local/js/MDCtrigger.js"></script>
+<script src="local/js/index.js"></script>
+</body>
+</html>
